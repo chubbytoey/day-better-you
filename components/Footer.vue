@@ -1,45 +1,45 @@
 <template>
-  <div class="footer-container">
-    <div class="footer-top">
-      <div class="footer-description">
-        <div class="footer-main">
-          7 DAYS BETTER YOU
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-description">
+                <div class="footer-main">
+                    7 DAYS BETTER YOU
+                </div>
+                <div class="footer-sub">
+                    Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s…
+                </div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-web">
+                    <div class="footer-main">
+                        เว็ปไซต์
+                    </div>
+                    <div class="footer-sub">
+                        <ul>
+                            <li>หน้าแรก</li>
+                            <li>โปรแกรม</li>
+                            <li>ติดต่อเรา</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-web">
+                    <div class="footer-main">
+                        อื่นๆ
+                    </div>
+                    <div class="footer-sub">
+                        <ul>
+                            <li>เข้าสู่ระบบ</li>
+                            <li>เงื่อนไขการใช้งาน</li>
+                            <li>นโนยายความเป็นส่วนตัว</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-sub">
-          Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s…
+        <div class="footer-bottom">
+            © 2020 All Rights Reserved, 7 DAYS BETTER YOU
         </div>
-      </div>
-      <div class="footer-list">
-        <div class="footer-web">
-          <div class="footer-main">
-            เว็ปไซต์
-          </div>
-          <div class="footer-sub">
-            <ul>
-              <li>หน้าแรก</li>
-              <li>โปรแกรม</li>
-              <li>ติดต่อเรา</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-web">
-          <div class="footer-main">
-            อื่นๆ
-          </div>
-          <div class="footer-sub">
-            <ul>
-              <li>เข้าสู่ระบบ</li>
-              <li>เงื่อนไขการใช้งาน</li>
-              <li>นโนยายความเป็นส่วนตัว</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="footer-bottom">
-      © 2020 All Rights Reserved, 7 DAYS BETTER YOU
-    </div>
-  </div>
 </template>
 <script>
 export default {
@@ -55,9 +55,11 @@ export default {
         display: flex;
         flex-direction: column;
         & > .footer-top {
+            max-width: 1280px;
             width: 100%;
-            margin-top:63px;
             display: flex;
+            margin:0 auto;
+            margin-top:63px;
             flex:1;
             justify-content: space-between;
             & > .footer-description {
@@ -112,5 +114,6 @@ export default {
             align-items: center;
             justify-content: center;
         }
+
     }
 </style>

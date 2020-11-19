@@ -2,18 +2,71 @@
 
 html,body {
   height: 100vh;
-    width: 100vw;
+    // width: 1280px;
+    width: 100%;
     font-size:20px;
     scroll-behavior: smooth;
     font-family: $based-font;
+    font-weight: 400;
 }
+//Button
 .custom-button {
     border:none;
     outline:none;
     width: 140px;
     height: 44px;
+    border-radius: 8px;
     color:#fff;
     &.ant-btn-primary {
         background-color: $based-color;
+    }
+}
+//Card
+.card-block {
+    color:darkblue;
+    width: 280px !important;
+    height: 416px !important;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    & .ant-card-cover {
+        position: relative;
+        & > img {
+            width: 280px;
+            height: 280px;
+            border-radius: 15px 15px 0 0;
+        }
+        & .gradient-overlay {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.347063) 17.16%, rgba(255, 255, 255, 0.61) 31.78%, rgba(255, 255, 255, 0.815075) 50.78%, rgba(255, 255, 255, 0.97) 72.84%, #FFFFFF 100%);
+            width: 280px;
+            height: 90px;
+            position: absolute;
+            bottom:0;
+        }
+    }
+    & > .ant-card-body {
+        padding: 0 20px 24px 20px;
+
+        & > .ant-card-meta .ant-card-meta-detail .ant-card-meta-description .price {
+            color:#0AC775;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top:17px
+        }
+        & > .ant-card-meta .ant-card-meta-detail .ant-card-meta-description p {
+            margin:0;
+        }
+        & > .ant-card-meta .ant-card-meta-detail .ant-card-meta-title {
+            font-weight: 700;
+            padding-top:4px;
+        }
+        & > .ant-card-meta .ant-card-meta-detail .ant-card-meta-description .shortDescrip {
+            width: 240px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            line-height: 24px;
+        }
     }
 }
